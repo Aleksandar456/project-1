@@ -144,3 +144,79 @@ body {
   font-size: 24px;
   padding: 30px 0;
 }
+#top h2 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  padding-top: 80px;
+
+}
+#top p {
+  color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.service-row {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+
+
+}
+/*.service-row > div {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  border: 1px solid #fff;
+
+}*/
+.service-row > div > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+/*.service-row > div > p{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px;
+  border-top: 1px solid #fff;
+  background-color: #ffffffC0;
+  margin-bottom: 0;
+  border-top: 1px solid #fff;
+  font-weight: bold;
+} */
+.img-wrap {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  border: 1px solid #fff;
+
+}
+.description {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px;
+  border-top: 1px solid #fff;
+  background-color: #ffffffC0;
+  margin: 0;
+  border-top: 1px solid #fff;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+.img-wrap:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
