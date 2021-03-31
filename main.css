@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   padding: 0px;
+  font-family: Calibri, sans-serif;
 }
 
 .header {
   border-bottom: 2px solid red;
+  background-color: #fefefe;
 }
 .page {
 
@@ -69,14 +74,12 @@ body {
   background: url('img/bg01.jpg');
   background-size: cover;
   background-attachment: fixed;
-  font-family: Nanum Myeongjo;
-
-
 }
 #pocetna h1 {
-  font-size: 48pt;
+  font-size: 60pt;
   margin-top: 0px;
   padding-top: calc(50vh - 240px);
+  text-shadow: 1px 1px 2px black;
 }
 .dark-box {
   border: 1px solid white;
@@ -91,7 +94,7 @@ body {
 }
 
 #karijera {
-  background: url('img/bg03.jpeg.crdownload');
+  background: url('img/bg04.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -150,6 +153,7 @@ body {
   color: white;
   font-size: 48px;
   padding-top: calc(50vh - 310px);
+  text-shadow: 1px 1px 2px black;
 
 }
 #top-usluge p {
@@ -283,4 +287,97 @@ body {
 }
 .proizvod:hover .text-holder {
   opacity: 1.0;
+}
+#karijera h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+.career-columns {
+  display: flex;
+}
+
+.job-list {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.job-descriptions {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.job-descriptions input{
+  display: none;
+}
+.job-descriptions .job-description {
+  display: none;
+}
+.job-list label{
+  display: block;
+  margin-bottom: 10px;
+  background-color: #ffffffC0;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.job-descriptions input:checked + .job-description {
+  display: block;
+}
+
+.job-description {
+  margin-left: 10px;
+  background-color: #ffffffC0;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+#kontakt h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.kontakt-region {
+  display: grid;
+  grid-template: "adrese mapa"
+                 "mejlovi mapa";
+  grid-template-columns: 300px 1fr;
+}
+.kontakt-adrese {
+  grid-area: adrese;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.kontakt-mejlovi {
+  grid-area: mejlovi;
+  font-size: 15px;
+}
+.kontakt-mapa {
+  grid-area: mapa;
+}
+
+.footer{
+  border-top: 3px solid #dc0101;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+.footer .column{
+
+  display: flex;
+}
+.footer .f-column {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px 0px 50px 0px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.red-link {
+  color: #dc0101;
+  text-decoration: none;
+}
+.red-link:hover {
+  text-decoration: underline;
 }
